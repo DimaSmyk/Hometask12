@@ -1,7 +1,7 @@
 package selfwork12.task01;
 
-import selfwork12.task02.EmpComparator;
-import selfwork12.task03.EmpComparator2;
+import selfwork12.task02.CompareEmpSalary;
+import selfwork12.task03.CompareEmpSalaryOrName;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,12 +29,12 @@ public class Test  {
         System.out.println("\nCompare by Id:\n " + employees);
 
         // on salary
-        EmpComparator comparator = new EmpComparator();
+        CompareEmpSalary comparator = new CompareEmpSalary();
         employees.sort(comparator);
         System.out.println("\nCompare by salary:\n " + employees);
 
         // if salary equals itself, compare by name
-        EmpComparator2 comparator2 = new EmpComparator2();
+        CompareEmpSalaryOrName comparator2 = new CompareEmpSalaryOrName();
         employees.sort(comparator2);
         System.out.println("\nCompare by salary and name:\n " + employees);
 
